@@ -1,0 +1,5 @@
+FROM golang:latest
+COPY ./show_v1  /
+EXPOSE 9000
+WORKDIR /
+ENTRYPOINT ["/show_v1"]
